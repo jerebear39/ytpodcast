@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  yt-podcast:
+    build: .
+    container_name: yt-podcast
+    restart: unless-stopped
+    ports:
+      - "8095:8000"
